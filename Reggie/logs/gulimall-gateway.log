@@ -1,0 +1,43 @@
+2022-03-03 23:34:47.694  INFO 6664 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gulimall-gateway.properties'}]}
+2022-03-03 23:34:48.272  INFO 6664 --- [main] c.a.g.g.GulimallGatewayApplication       : No active profile set, falling back to default profiles: default
+2022-03-03 23:34:49.693  WARN 6664 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-03-03 23:34:49.704  WARN 6664 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-03-03 23:34:50.273  WARN 6664 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-03-03 23:34:50.867  INFO 6664 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b0835bbf-a334-3509-8db5-edf9e76eb094
+2022-03-03 23:34:50.951  INFO 6664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$494fdb28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-03 23:34:51.288  WARN 6664 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-03 23:34:51.303  INFO 6664 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-03 23:34:51.324  WARN 6664 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-03-03 23:34:51.324  INFO 6664 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-03 23:34:53.667  INFO 6664 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-03-03 23:34:55.249  INFO 6664 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-03-03 23:34:56.516  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-03-03 23:34:56.517  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-03-03 23:34:56.517  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-03-03 23:34:56.517  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-03-03 23:34:56.519  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-03-03 23:34:56.519  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-03-03 23:34:56.519  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-03-03 23:34:56.519  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-03-03 23:34:56.520  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-03-03 23:34:56.524  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2022-03-03 23:34:56.525  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-03 23:34:56.525  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-03-03 23:34:56.527  INFO 6664 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-03 23:34:57.059  INFO 6664 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-03-03 23:34:57.060  INFO 6664 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-03-03 23:34:57.061  INFO 6664 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-03-03 23:34:57.139  INFO 6664 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-03 23:34:57.294  INFO 6664 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-03-03 23:34:58.510  INFO 6664 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 88
+2022-03-03 23:35:00.075  INFO 6664 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-03-03 23:35:00.089  INFO 6664 --- [main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.106.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":88,"scheduled":false,"serviceName":"DEFAULT_GROUP@@gulimall-gateway","stopped":false,"weight":1.0} to beat map.
+2022-03-03 23:35:00.268  INFO 6664 --- [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@gulimall-gateway with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.106.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":88,"weight":1.0}
+2022-03-03 23:35:00.407  INFO 6664 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, gulimall-gateway 192.168.106.1:88 register finished
+2022-03-03 23:35:00.414  INFO 6664 --- [main] c.a.g.g.GulimallGatewayApplication       : Started GulimallGatewayApplication in 22.117 seconds (JVM running for 24.343)
+2022-03-03 23:35:00.421  INFO 6664 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-127.0.0.1_8848-3d49198d-bb3d-4336-8cb0-2529c897e3f8] [subscribe] gulimall-gateway.properties+DEFAULT_GROUP+3d49198d-bb3d-4336-8cb0-2529c897e3f8
+2022-03-03 23:35:00.422  INFO 6664 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-127.0.0.1_8848-3d49198d-bb3d-4336-8cb0-2529c897e3f8] [add-listener] ok, tenant=3d49198d-bb3d-4336-8cb0-2529c897e3f8, dataId=gulimall-gateway.properties, group=DEFAULT_GROUP, cnt=1
+2022-03-03 23:38:57.790  INFO 6664 --- [Thread-40] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-03-03 23:38:57.791  INFO 6664 --- [Thread-40] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@gulimall-gateway:192.168.106.1:88 from beat map.
+2022-03-03 23:38:57.792  INFO 6664 --- [Thread-40] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@gulimall-gateway with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.106.1","ipDeleteTimeout":30000,"metadata":{},"port":88,"weight":1.0}
+2022-03-03 23:38:57.796  INFO 6664 --- [Thread-40] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.

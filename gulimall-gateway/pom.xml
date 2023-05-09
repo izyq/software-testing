@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.8.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.atguigu.gulimall</groupId>
+    <artifactId>gulimall-gateway</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>gulimall-gateway</name>
+    <description>gulimall-gateway</description>
+    <properties>
+        <java.version>1.8</java.version>
+        <!--springcloud版本-->
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+    </properties>
+    <dependencies>
+        <!--&lt;!&ndash;依赖common公共模块&ndash;&gt;-->
+        <!--<dependency>-->
+        <!--    <groupId>com.atguigu.gulimall</groupId>-->
+        <!--    <artifactId>gulimall-common</artifactId>-->
+        <!--    <version>0.0.1-SNAPSHOT</version>-->
+        <!--    <exclusions>-->
+        <!--        &lt;!&ndash;排除Seata依赖&ndash;&gt;-->
+        <!--        <exclusion>-->
+        <!--            <groupId>com.alibaba.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>-->
+        <!--        </exclusion>-->
+        <!--    </exclusions>-->
+        <!--</dependency>-->
+        <!--actuator信息审计模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--&lt;!&ndash;zipkin依赖,这里中已经有sleuth依赖了,上边这个就不需要了&ndash;&gt;-->
+        <!--<dependency>-->
+        <!--    <groupId>org.springframework.cloud</groupId>-->
+        <!--    <artifactId>spring-cloud-starter-zipkin</artifactId>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash;sentinel和gateway网关整合的依赖&ndash;&gt;-->
+        <!--<dependency>-->
+        <!--    <groupId>com.alibaba.cloud</groupId>-->
+        <!--    <artifactId>spring-cloud-alibaba-sentinel-gateway</artifactId>-->
+        <!--    <version>2.1.0.RELEASE</version>-->
+        <!--</dependency>-->
+        <!--网关依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--lombok依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+        </dependency>
+        <!--阿里巴巴nacos注册发现中心依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--阿里巴巴nacos-config配置中心依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        <!--阿里巴巴依赖管理-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.1.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
