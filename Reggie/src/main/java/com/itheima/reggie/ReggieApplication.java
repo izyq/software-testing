@@ -29,6 +29,7 @@ public class ReggieApplication {
     public MybatisPlusInterceptor mybatisPlusInterceptor(){
         MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();
         mybatisPlusInterceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+        System.out.println(System.getProperty("user.dir"));
         return mybatisPlusInterceptor;
     }
 
