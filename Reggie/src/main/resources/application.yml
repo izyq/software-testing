@@ -5,19 +5,19 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
 #    url后边加参数,防乱码
-    url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://ip.izyq.cn:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: root
+    password: n1mysql666
   servlet:
     multipart:
       file-size-threshold: 102400
 
 #      redis配置
   redis:
-    host: localhost
+    host: ip.izyq.cn
     port: 6379
     database: 0
-    password:
+    password: n1redis666
   cache:
     redis:
       time-to-live: 1800000
@@ -33,4 +33,4 @@ mybatis-plus:
       id-type: assign_id
 
 reggie:
-  path: E:\img\
+  path: 图片资源/
