@@ -35,7 +35,11 @@ public class LoginFilter implements Filter {
                 "/backend/**",
                 "/front/**",
                 "/user/**",
-                "/wx/notify"
+                "/wx/notify",
+                "/doc.html",
+                "/webjars/**",
+                "/swagger-resources",
+                "/v2/api-docs"
         };
         //如果不需要处理，则直接放行
         for (String url : urls) {
