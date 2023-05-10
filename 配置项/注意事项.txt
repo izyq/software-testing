@@ -1,2 +1,0 @@
-wxpay-sdk-3.0.9.jar
-这个是微信支付的jar包,因没有上传到maven仓库,需要自行安装到本地仓库,教程在markdown中
